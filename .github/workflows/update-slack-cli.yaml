@@ -13,7 +13,7 @@ jobs:
   update-slack-cli:
     runs-on: ubuntu-slim
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: cachix/install-nix-action@v31
       - name: Update slack-cli
         run: nix run nixpkgs#nix-update -- --flake --version=stable slackcli
