@@ -18,7 +18,7 @@ jobs:
       - name: Update slack-cli
         run: nix run nixpkgs#nix-update -- --flake --version=stable slackcli
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "slackcli: update Slack CLI"
           title: "slackcli: update Slack CLI"
