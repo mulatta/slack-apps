@@ -1,5 +1,0 @@
-{
-  "hooks": {
-    "get-manifest": "sh -c 'yq -o=json . manifest.yaml'"
-  }
-}
