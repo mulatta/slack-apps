@@ -8,16 +8,16 @@
 # go.mod requires go >= 1.27.1, newer than nixpkgs' default toolchain.
 buildGo127Module (finalAttrs: {
   pname = "slack-cli";
-  version = "4.9.0";
+  version = "4.10.0";
 
   src = fetchFromGitHub {
     owner = "slackapi";
     repo = "slack-cli";
     rev = "v${finalAttrs.version}";
-    hash = "sha256-hUgp80dDNMWWJ4NAnOJm5Z9FDdz4lxCodiVR3yh7Xlg=";
+    hash = "sha256-oov1JwvUA/1UHAy7kTe7XAZVvesekSk1IRogpSwvEo4=";
   };
 
-  vendorHash = "sha256-nwGw6+9F+kbouJ/7T2xYJCrp32MF+zIHq6G/iPxQSWc=";
+  vendorHash = "sha256-rIR5U+/Wbo5bKuvzI5SwsrYXFxw6leieFihck65TCNA=";
 
   subPackages = [ "." ];
 
