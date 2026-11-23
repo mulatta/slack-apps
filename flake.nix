@@ -67,6 +67,10 @@
 
       formatter = eachSystem ({ system, ... }: treefmtEval.${system}.config.build.wrapper);
 
+      herculesCI = import ./effects.nix {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+      };
+
       packages = eachSystem (
         { pkgs, ... }:
         {
